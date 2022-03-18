@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: JSON } do
     namespace :v1 do
       # resources
+      resources :users, only: [:show]
     end
   end
 end
